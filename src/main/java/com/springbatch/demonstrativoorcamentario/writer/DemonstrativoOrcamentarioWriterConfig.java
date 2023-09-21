@@ -7,8 +7,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.springframework.batch.core.configuration.annotation.StepScope;
-import org.springframework.batch.item.ItemWriter;
-import org.springframework.batch.item.file.FlatFileFooterCallback;
 import org.springframework.batch.item.file.FlatFileHeaderCallback;
 import org.springframework.batch.item.file.FlatFileItemWriter;
 import org.springframework.batch.item.file.builder.FlatFileItemWriterBuilder;
@@ -23,6 +21,7 @@ import org.springframework.core.io.Resource;
 
 @Configuration
 public class DemonstrativoOrcamentarioWriterConfig {
+
     @StepScope
   @Bean
 	public FlatFileItemWriter<GrupoLancamento> demonstrativoOrcamentarioWriter(
